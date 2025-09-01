@@ -1,19 +1,23 @@
 {
 	"name": "@yeunoia/typed-storage",
-	"version": "0.1.1",
+	"version": "0.1.3",
 	"description": "Type-safe storage library",
 	"main": "dist/index.js",
 	"module": "dist/index.mjs",
 	"types": "dist/index.d.ts",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/yeunoia/typed-storage.git"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
 	"exports": {
 		".": {
 			"types": "./dist/index.d.ts",
 			"import": "./dist/index.mjs",
 			"require": "./dist/index.js"
 		}
-	},
-	"publishConfig": {
-		"access": "public"
 	},
 	"files": [
 		"dist"
