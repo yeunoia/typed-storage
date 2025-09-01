@@ -1,6 +1,6 @@
 {
 	"name": "typed-storage",
-	"version": "1.0.0",
+	"version": "0.1.0",
 	"description": "Type-safe storage library",
 	"main": "dist/index.js",
 	"module": "dist/index.mjs",
@@ -34,8 +34,10 @@
 	"packageManager": "pnpm@10.9.0",
 	"devDependencies": {
 		"@types/node": "^24.3.0",
+		"node-localstorage": "^3.0.5",
 		"nodemon": "^3.1.10",
 		"tsup": "^8.5.0",
+		"tsx": "^4.20.5",
 		"typescript": "^5.9.2"
 	}
 }
