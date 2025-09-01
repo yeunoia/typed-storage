@@ -1,18 +1,21 @@
-# typed-storage
+# @yeunoia/typed-storage
 
 Type-safe localStorage
 
 ## Installation
 
 ```bash
-npm install typed-storage
+npm install @yeunoia/typed-storage
 
+yarn add @yeunoia/typed-storage
+
+pnpm add @yeunoia/typed-storage
 ```
 
 ## Usage
 
 ```typescript
-import { typedLocalStorage } from 'typed-storage'
+import { typedLocalStorage } from '@yeunoia/typed-storage'
 
 // Create typed storage instance
 type User = { id: number; name: string }
