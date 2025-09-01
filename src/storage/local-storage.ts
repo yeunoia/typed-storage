@@ -10,11 +10,11 @@ export const createLocalStorage = <K extends string, V>(
 		deserialize: JSON.parse,
 	}
 
-	const getFullKey = (key: K): string => (prefix ? `${prefix}:${key}` : key)
+	const getPrefixKey = (key: K): string => (prefix ? `${prefix}:${key}` : key)
 
 	const get = (key: K) => {
 		try {
-			const value = localStorage.getItem(getFullKey(key))
+			const value = localStorage.getItem(getPrefixKey(key))
 			if (value === null) return null
 			return serializer.deserialize(value)
 		} catch (error) {
@@ -26,7 +26,7 @@ export const createLocalStorage = <K extends string, V>(
 	const set = (key: K, value: V) => {
 		try {
 			const serialized = serializer.serialize(value)
-			localStorage.setItem(getFullKey(key), serialized)
+			localStorage.setItem(getPrefixKey(key), serialized)
 		} catch (error) {
 			console.warn('LocalStorage set error:', error)
 		}
@@ -34,7 +34,7 @@ export const createLocalStorage = <K extends string, V>(
 
 	const remove = (key: K) => {
 		try {
-			localStorage.removeItem(getFullKey(key))
+			localStorage.removeItem(getPrefixKey(key))
 		} catch (error) {
 			console.warn('LocalStorage remove error:', error)
 		}
