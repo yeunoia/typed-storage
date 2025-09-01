@@ -1,0 +1,41 @@
+{
+	"name": "typed-storage",
+	"version": "1.0.0",
+	"description": "Type-safe storage library",
+	"main": "dist/index.js",
+	"module": "dist/index.mjs",
+	"types": "dist/index.d.ts",
+	"exports": {
+		".": {
+			"import": "./dist/index.mjs",
+			"require": "./dist/index.js",
+			"types": "./dist/index.d.ts"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsup",
+		"dev": "tsup --watch",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"test:watch": "nodemon test/node-test.ts"
+	},
+	"keywords": [
+		"storage",
+		"localStorage",
+		"sessionStorage",
+		"indexeddb",
+		"typescript",
+		"typed"
+	],
+	"author": "",
+	"license": "ISC",
+	"packageManager": "pnpm@10.9.0",
+	"devDependencies": {
+		"@types/node": "^24.3.0",
+		"nodemon": "^3.1.10",
+		"tsup": "^8.5.0",
+		"typescript": "^5.9.2"
+	}
+}
