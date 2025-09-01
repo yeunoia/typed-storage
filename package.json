@@ -1,5 +1,5 @@
 {
-	"name": "typed-storage",
+	"name": "@yeunoia/typed-storage",
 	"version": "0.1.0",
 	"description": "Type-safe storage library",
 	"main": "dist/index.js",
@@ -7,9 +7,9 @@
 	"types": "dist/index.d.ts",
 	"exports": {
 		".": {
+			"types": "./dist/index.d.ts",
 			"import": "./dist/index.mjs",
-			"require": "./dist/index.js",
-			"types": "./dist/index.d.ts"
+			"require": "./dist/index.js"
 		}
 	},
 	"files": [
