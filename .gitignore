@@ -29,4 +29,3 @@ lerna-debug.log*
 
 .node_repl_history
 
-test/node-test.ts
