@@ -12,6 +12,9 @@
 			"require": "./dist/index.js"
 		}
 	},
+	"publishConfig": {
+		"access": "public"
+	},
 	"files": [
 		"dist"
 	],
@@ -29,8 +32,8 @@
 		"typescript",
 		"typed"
 	],
-	"author": "",
-	"license": "ISC",
+	"author": "yeunoia",
+	"license": "MIT",
 	"packageManager": "pnpm@10.9.0",
 	"devDependencies": {
 		"@types/node": "^24.3.0",
