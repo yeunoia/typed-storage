@@ -1,6 +1,6 @@
 {
 	"name": "@yeunoia/typed-storage",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"description": "Type-safe storage library",
 	"main": "dist/index.js",
 	"module": "dist/index.mjs",
