@@ -1,6 +1,6 @@
 import { StorageOptions } from '../@types/base-storage.type'
 import { createStorage } from './base-storage'
 
-export const createLocalStorage = <K extends string, V>(
+export const createSessionStorage = <K extends string, V>(
 	options?: StorageOptions
-) => createStorage<K, V>(localStorage, 'local', options)
+) => createStorage<K, V>(sessionStorage, 'session', options)
