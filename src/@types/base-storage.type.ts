@@ -1,4 +1,7 @@
-export type StorageType = 'local' | 'session'
+export interface StorageType {
+	local: 'local'
+	session: 'session'
+}
 export interface StorageOptions {
 	prefix?: string
 	serializer?: {
