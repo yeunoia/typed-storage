@@ -2,7 +2,8 @@ name: Publish Typed Storage
 
 on:
   push:
-    tags: -'v*'
+    tags: 
+      -'v*'
 
 permissions:
   id-token: write # Required for OIDC
